@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboards LOGA</title>
+    <link rel="stylesheet" href="stylepowerBi.css">
+</head>
+
+<body>
+    <div class="controladoria-bar">
+        <h3>PORTAL INDICADORES - LOGA</h3>
+    </div>
+    <div class="sidebar">
+        <ul class="menu">
+            <li class="menu-item">
+                <h3>Departamentos</h3>
+                <h4>Analytics</h4>
+                <button class="toggle-button" onclick="toggleSubMenu('analytics-submenu')"
+                    data-submenu="analytics-submenu">
+                    <img width="25px" src="Imagens/seta-para-baixo.png" class="password-toggle-icon"
+                        id="seta-para-baixo-analytics">
+                    <img width="18px" src="Imagens/set-para-cima.png" class="password-toggle-icon"
+                        id="seta-para-cima-analytics" style="display: none;">
+                </button>
+                <div class="submenu" id="analytics-submenu">
+                    <ul>
+                        <li><button
+                                onclick="updateReport('https://app.powerbi.com/view?r=eyJrIjoiZmZmNzMzMDMtNGM2Ny00NDMzLWE2NGEtYWYxZTI0ZGRmMGFlIiwidCI6ImU3ODBkNGMwLThkMGYtNDY2My1hYjA1LWEzODJkYjEwYzNiMSJ9')">Sobrepeso
+                                Domiciliar</button></li>
+                        <li><button
+                                onclick="updateReport('https://app.powerbi.com/view?r=eyJrIjoiYjIxYjc3YmQtOTNmYi00M2ZmLWFkNTEtY2EwOWVhYjllNjk4IiwidCI6ImU3ODBkNGMwLThkMGYtNDY2My1hYjA1LWEzODJkYjEwYzNiMSJ9')">Consumo
+                                de Combustível</button></li>
+                        <li><button
+                                onclick="updateReport('https://app.powerbi.com/view?r=eyJrIjoiMmY4NzAzYjAtMjZiYS00NjI1LWJhOTItNzBiZjcxYTI3YjVhIiwidCI6ImU3ODBkNGMwLThkMGYtNDY2My1hYjA1LWEzODJkYjEwYzNiMSJ9')">Comparativo
+                                de pesagens</button></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu-item">
+                <h4>Controladoria</h4>
+                <button class="toggle-button" onclick="toggleSubMenu('controladoria-submenu')"
+                    data-submenu="controladoria-submenu">
+                    <img width="25px" src="Imagens/seta-para-baixo.png" class="password-toggle-icon"
+                        id="seta-para-baixo-controladoria">
+                    <img width="18px" src="Imagens/set-para-cima.png" class="password-toggle-icon"
+                        id="seta-para-cima-controladoria" style="display: none;">
+                </button>
+                <div class="submenu" id="controladoria-submenu">
+                    <ul>
+                        <li><button
+                                onclick="updateReport('https://app.powerbi.com/view?r=eyJrIjoiN2Q2NzM4MjAtY2NkMy00ODk4LWEwNWEtZWVhNmVkMTMxZDJjIiwidCI6ImU3ODBkNGMwLThkMGYtNDY2My1hYjA1LWEzODJkYjEwYzNiMSJ9')">Taxi</button>
+                        </li>
+                        <li><button
+                                onclick="updateReport('https://app.powerbi.com/view?r=eyJrIjoiYjEwNjM4ODAtOGMyOC00ZTAzLTk5ZWEtODg1ZGZiNjhjOGY0IiwidCI6ImU3ODBkNGMwLThkMGYtNDY2My1hYjA1LWEzODJkYjEwYzNiMSJ9')">Book
+                                Executivo</button></li>
+                        <li><button
+                                onclick="updateReport('https://app.powerbi.com/view?r=eyJrIjoiM2Y0MWViZDUtMzkwOS00ODg3LThmNWUtNmIyOWRlODFmNjgyIiwidCI6ImU3ODBkNGMwLThkMGYtNDY2My1hYjA1LWEzODJkYjEwYzNiMSJ9')">Consumo
+                                (Àgua, Energia e Gás)</button></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu-item">
+                <h4>Departamento Pessoal</h4>
+                <button class="toggle-button" onclick="toggleSubMenu('dp-submenu')" data-submenu="dp-submenu">
+                    <img width="25px" src="Imagens/seta-para-baixo.png" class="password-toggle-icon"
+                        id="seta-para-baixo-dp">
+                    <img width="18px" src="Imagens/set-para-cima.png" class="password-toggle-icon"
+                        id="seta-para-cima-dp" style="display: none;">
+                </button>
+                <div class="submenu" id="dp-submenu">
+                    <ul>
+                        <li><button
+                                onclick="updateReport('https://app.powerbi.com/view?r=eyJrIjoiOTg1ODU3NGUtNmVmNS00MzUyLTliNDgtYTYyNjBmZjdkZmJmIiwidCI6ImU3ODBkNGMwLThkMGYtNDY2My1hYjA1LWEzODJkYjEwYzNiMSJ9')">Dashboard
+                                DP</button></li>
+                    </ul>
+                </div>
+            </li>
+            <li class="menu-item">
+                <h4>Gestão de Contratos</h4>
+                <button class="toggle-button" onclick="toggleSubMenu('contratos-submenu')"
+                    data-submenu="contratos-submenu">
+                    <img width="25px" src="Imagens/seta-para-baixo.png" class="password-toggle-icon"
+                        id="seta-para-baixo-contratos">
+                    <img width="18px" src="Imagens/set-para-cima.png" class="password-toggle-icon"
+                        id="seta-para-cima-contratos" style="display: none;">
+                </button>
+                <div class="submenu" id="contratos-submenu">
+                    <ul>
+                        <li><button
+                                onclick="updateReport('https://app.powerbi.com/view?r=eyJrIjoiMjFiMjg2OTAtNGYxNC00MWUzLTkxNWMtOWFiNjgxZGM0N2FjIiwidCI6ImU3ODBkNGMwLThkMGYtNDY2My1hYjA1LWEzODJkYjEwYzNiMSJ9')">Gestão
+                                de processos</button></li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+        <div class="sidebar-footer">
+            <img id="logologa" src="Imagens/Logo_Colorido.png" alt="Logo" width="50px">
+            <button class="logout-button" onclick="logout()">SAIR</button>
+        </div>
+    </div>
+    <div class="main-content">
+        <div class="bi-content">
+            <iframe id="report-iframe" title="Painel Relatório de Utilização de Táxis_Rev0" src=""
+                allowfullscreen></iframe>
+        </div>
+    </div>
+    <script>
+        // Função para alternar a exibição do submenu
+        function toggleSubMenu(submenuId) {
+            var submenu = document.getElementById(submenuId);
+            var isSubMenuOpen = submenu.classList.contains('show');
+
+            // Fechar todos os submenus
+            var allSubmenus = document.querySelectorAll('.submenu');
+            allSubmenus.forEach(function (submenu) {
+                submenu.classList.remove('show');
+            });
+
+            // Alterar os ícones de todos os botões
+            var allToggleButtons = document.querySelectorAll('.toggle-button');
+            allToggleButtons.forEach(function (button) {
+                var showIcon = button.querySelector('.password-toggle-icon[id*="baixo"]');
+                var hideIcon = button.querySelector('.password-toggle-icon[id*="cima"]');
+                showIcon.style.display = 'inline';
+                hideIcon.style.display = 'none';
+            });
+
+            if (!isSubMenuOpen) {
+                // Abrir o submenu clicado
+                submenu.classList.add('show');
+                var toggleButton = document.querySelector(`[data-submenu="${submenuId}"]`);
+                var showIcon = toggleButton.querySelector('.password-toggle-icon[id*="baixo"]');
+                var hideIcon = toggleButton.querySelector('.password-toggle-icon[id*="cima"]');
+                showIcon.style.display = 'none';
+                hideIcon.style.display = 'inline';
+            }
+        }
+        function updateReport(reportUrl) {
+            var reportIframe = document.getElementById('report-iframe');
+            reportIframe.src = reportUrl;
+        }
+        function logout() {
+            window.location.href = "login.html";
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,168 @@
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-color: #f0f0f0;
+}
+
+.controladoria-bar {
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    transition: width 0.5s;
+   
+}
+
+.controladoria-bar h3 {
+    padding-left: 10px;
+    margin: 0;
+    text-align: center;
+}
+
+.sidebar {
+    background-color: #a09e9ef3;
+    color: #181818;
+    width: 240px;
+    padding-top: 30px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    overflow-y: auto;
+    transition: width 0.5s;
+
+}
+
+.menu {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.menu-item {
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.menu-item h4 {
+    margin: 0;
+    padding-left: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.menu-item h3{
+    margin: 0;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    color: white;
+
+    
+}
+.toggle-button {
+    background-color: transparent;
+    border: none;
+    left: 200px;
+    cursor: pointer;
+    transform: translateY(-70%);
+    position: absolute;
+}
+
+.submenu {
+    display: none;
+    position: relative;
+    background-color: #756f6ff3;
+    border: 1px solid #f5f3f3;
+    border-radius: 5px;
+    padding: 10px;
+    z-index: 3;
+    transition: max-height 0.5s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+    margin: 5px;
+}
+
+.show {
+    display: block;
+    max-height: 200px;
+}
+
+.submenu ul {
+    padding: 0;
+    margin: 0;
+}
+
+.submenu ul li {
+    list-style-type: none;
+    padding: 5px 0;
+}
+
+.submenu ul li button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    color: #fdf8f8;
+    transition: color 0.3s;
+}
+
+.submenu ul li button:hover {
+  
+    color: #4CAF50;
+}
+
+.main-content {
+    margin-left: 240px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.bi-content {
+    width: 100%;
+    height: calc(89vh - 20px);
+    background-color: #f0f0f0;
+}
+
+iframe {
+    width: 100%;
+    height: calc(89vh - 20px);
+    border: none;
+}
+
+.logout-button {
+    font-weight: bold;
+    background-color: #d9534f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-bottom: 8px;
+    position: absolute;
+    bottom: 20px;
+    left: 35%;
+    z-index: 4;
+}
+
+.logout-button:hover {
+    font-weight: bold;
+    background-color: #eb1a13;
+}
+
+
+#logologa {
+    position: absolute;
+    bottom: 70px;
+    left:42%;
+    z-index: 4;
+
+}

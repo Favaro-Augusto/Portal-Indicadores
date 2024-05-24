@@ -1,0 +1,141 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.login-container {
+    display: flex;
+    height: 100vh;
+}
+
+.image-container {
+    flex: 1;
+    background-color: #28a745; /* Cor verde */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Evita que a imagem vaze do contêiner */
+}
+
+.image-container img {
+    width: 100%; /* Garante que a imagem se ajuste ao contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+}
+
+.form-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box; /* Inclui o preenchimento no tamanho total do contêiner */
+    flex-direction: column; /* Empilha os elementos verticalmente */
+}
+
+.form-container h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    width: 100%;
+    max-width: 400px;
+}
+
+input[type="text"],
+input[type="password"],
+button {
+    display: block;
+    width: calc(100% - 20px); /* Leva em consideração a largura da borda */
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #28a745; /* Borda verde */
+    border-radius: 3px;
+    font-weight: bold;
+    box-sizing: border-box; /* Inclui a borda e o preenchimento no tamanho total */
+}
+
+button {
+    background-color: #28a745; /* Cor de fundo verde */
+    color: #fff;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #137528; /* Cor de fundo verde escuro ao passar o mouse */
+}
+
+/* Ajustes no ícone do olho */
+/* Ajustes no ícone do olho */
+.password-input-container {
+    position: relative;
+}
+
+.password-toggle-icon {
+    position: absolute;
+    left: 5px; /* Alinha ao canto esquerdo */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+/* Ícone do olho fechado */
+.password-toggle-icon::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px; /* Reduz o tamanho do ícone */
+    height: 1px; /* Reduz o tamanho do ícone */
+    background-image: url('');
+    background-size: cover;
+}
+
+/* Ícone do olho aberto (invisível inicialmente) */
+.password-toggle-icon::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 1px; /* Reduz o tamanho do ícone */
+    height: 1px; /* Reduz o tamanho do ícone */
+    background-image: url('');
+    background-size: cover;
+    display: none;
+}
+
+.password-toggle-icon {
+    position: absolute;
+    left: 345px; /* Alinha ao canto esquerdo */
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.desenvolvido  {
+
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    margin-top: 500px;
+    display: flex;
+    text-align: center;
+
+}
+
+.desenvolvido1  {
+
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: absolute;
+    margin-top: 450px;
+    display: flex;
+    text-align: center;
+
+}
+.fav{
+    font-weight: bold;
+    color: #28a745;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal LOGA</title>
+    <link rel="shortcut icon" type="imagex/png" href="Imagens/Logo_branco.png">
+    <link rel="stylesheet" href="loginstyle.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <div class="login-container">
+        <div class="image-container">
+            <img src="Imagens/Imagen_telaLogin.jpeg" alt="Imagem de fundo">
+        </div>
+        <div class="form-container">
+            <img src="Imagens/Logo_Colorido.png" alt="Imagem de fundo"><br>
+            <h4>BEM VINDO AO PORTAL LOGA</h4>
+            <!-- Adicionando o cabeçalho -->
+            <form id="login-form">
+                <input type="text" id="username" placeholder="Matrícula" required>
+                <div class="password-input-container">
+                    <input type="password" id="password" placeholder="Senha" required>
+                    <!-- Ícone de olho fechado -->
+                    <img width="25px" src="Imagens/olho.png" alt="Imagem de fundo" class="password-toggle-icon" id="show-password">
+                    <!-- Ícone de olho aberto (invisível inicialmente) -->
+                    <img width="25px" src="Imagens/olho-aberto.png" alt="Imagem de fundo" class="password-toggle-icon" id="hide-password" style="display: none;">
+                </div>
+                <button type="submit">Login</button>
+                
+            </form>
+            <div class="desenvolvido1">© 2024 - LOGA - Logística Ambiental de São Paulo</div>
+            <div class="desenvolvido"> Desenvolvido por <span class="fav">&nbspFávaro Augusto.</span> </div>
+        </div>
+    </div>
+    <script src="login.js"></script>
+</body>
+
+</html>
+
+
